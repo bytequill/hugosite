@@ -1,0 +1,41 @@
+$bg_dim             : #1E2326
+$bg0                : #272E33
+$bg1                : #2E383C
+$bg2                : #374145
+$bg3                : #414B50
+$bg4                : #495156
+$bg5                : #4F5B58
+$bg_red             : #4C3743
+$fg                 : #D3C6AA
+$green              : #A7C080
+
+body 
+    color: $fg
+    background-color: $bg0
+    font-family: 'Silkscreen', sans-serif
+
+a, a:visited
+    color: $green
+a:hover
+    color: #91a76f
+/* Header */
+#head
+    display: flex
+    width: fit-content
+    border-bottom: 2px dashed $fg
+    padding-bottom: 10px
+    margin-bottom: 20px
+#head>div>h1
+    margin: 0 0 0 0
+    font-size: 4.2vw
+    text-shadow: 0.3vw 0.4vw #45443c
+div#navbar>a
+    font-size: 15pt
+/* Footer */
+a#footer_link, a.footer_link:visited
+    color: inherit
+#footer
+    border-top: 2px dashed $fg
+    padding-top: 1vh
+article
+    min-height: 100vh

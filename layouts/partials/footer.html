@@ -1,0 +1,7 @@
+{{ with resources.Get "LICENSE" }}
+<div id="footer">
+<a href="{{ .RelPermalink }}" class="footer_link">
+{{ end }}
+{{ .Site.Copyright }}</a> * Made with <a class="footer_link" href="https://gohugo.io/">HUGO</a>
+</div>
+</body>

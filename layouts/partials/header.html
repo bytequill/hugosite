@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
+    <link rel="shortcut icon" href="logo.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+
+    {{ with resources.Get "main.sass" | toCSS }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}">
+    {{ end }}
+</head>
+<body>
+<header>
+<center>
+<div id="head">
+    <div>    
+        <h1><{{ .Site.Title }}></h1>
+        <p>SUBTITLE</p>
+        <div id="navbar"><a href="/">HOME</a>—<a href="/posts">BLOG</a></div>
+    </div>
+</div>
+</center>
+</header>
