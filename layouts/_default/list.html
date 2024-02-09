@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+{{ with resources.Get "list.sass" | toCSS }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end }}
+<article>
+    <center>
+    {{ range .Pages.ByDate.Reverse }}
+        <a href="{{ .RelPermalink }}" class="list-link">
+        <li>
+            <h4>{{.LinkTitle}}</h4>
+            <p>{{ .Summary }}</p>
+            <p class="date">{{ .Date.Format "2006-01-02" }}</p>
+        </li>
+        </a>
+    {{ end }}
+    </center>
+</article>
+{{ partial "footer.html" . }}

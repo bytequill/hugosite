@@ -1,5 +1,7 @@
 baseURL = 'http://localhost:1313/' #TODO: Change to url on initial commit
 languageCode = 'en-us'
 title = 'BYTEQUILL'
-copyright = '©2024 under MIT license'
+copyright = '©2024-2024 bytequill, under MIT license'
+
+[params]
 subtitle = 'A COMPUTER NERD'

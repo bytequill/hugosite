@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ .Title }}</title>
-    <link rel="shortcut icon" href="logo.png" type="image/png">
+    <title>{{ .Site.Title }} - {{ .Title }}</title>
+    <link rel="shortcut icon" href="404.png" type="image/png"> <!-- TODO: make a favicon -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
 <div id="head">
     <div>    
         <h1><{{ .Site.Title }}></h1>
-        <p>SUBTITLE</p>
+        <p style="margin: 0;">{{ .Site.Params.Subtitle }}</p>
         <div id="navbar"><a href="/">HOME</a>—<a href="/posts">BLOG</a></div>
     </div>
 </div>

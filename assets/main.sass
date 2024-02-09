@@ -1,3 +1,4 @@
+/* EVERFOREST Dark Hard colors: https://github.com/sainnhe/everforest/
 $bg_dim             : #1E2326
 $bg0                : #272E33
 $bg1                : #2E383C
@@ -13,6 +14,19 @@ body
     color: $fg
     background-color: $bg0
     font-family: 'Silkscreen', sans-serif
+    /* Center limited width */
+    max-width: 1000px !important
+    margin: 0 auto !important
+    float: none !important
+.date
+    color: gray
+#metadata
+    border-bottom: 2px dashed $fg
+    padding-bottom: 10px
+    margin-bottom: 15px
+/* More compact text */
+h1, h2, h3, h4, p
+    margin: 3pt
 
 a, a:visited
     color: $green
@@ -27,15 +41,21 @@ a:hover
     margin-bottom: 20px
 #head>div>h1
     margin: 0 0 0 0
-    font-size: 4.2vw
+    font-size: 60pt
     text-shadow: 0.3vw 0.4vw #45443c
+@media (max-width: 600px)
+    #head>div>h1
+        font-size: 45pt
 div#navbar>a
     font-size: 15pt
 /* Footer */
-a#footer_link, a.footer_link:visited
-    color: inherit
+.footer_link, .footer_link:visited
+    color: $fg
 #footer
     border-top: 2px dashed $fg
-    padding-top: 1vh
+    padding: 5px 0 5px 0
+    font-size: 10pt
 article
+    font-family: monospace
+    font-size: 11pt
     min-height: 100vh

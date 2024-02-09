@@ -1,0 +1,15 @@
+{{ partial "header.html" . }}
+{{ with resources.Get "post.sass" | toCSS }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ end }}
+<article>
+    <div id="metadata">
+    <h1>{{.Title}}</h1>
+    <p class="date">{{ .Date.Format "2006-01-02" }}</p>
+    {{.Summary}}
+    </div>
+    <div id="content">
+    {{.Content}}
+    </div>
+</article>
+{{ partial "footer.html" . }}
